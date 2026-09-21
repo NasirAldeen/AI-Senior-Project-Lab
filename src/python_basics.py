@@ -16,3 +16,14 @@ topics = ["Python", "NumPy", "Pandas"]
 
 for item in topics:
       print("Study topic:", item)
+
+session = {
+      "topic": "Python basics",
+      "hours": hours_studied,
+      "completed": True,
+  }
+
+if session["completed"]:
+      print("Completed topic:", session["topic"])
+else:
+      print("Topic not completed yet.")
