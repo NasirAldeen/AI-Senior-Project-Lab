@@ -27,3 +27,16 @@ if session["completed"]:
       print("Completed topic:", session["topic"])
 else:
       print("Topic not completed yet.")
+
+scores = [72, 88, 91, 65, 84]
+
+def average_score(values):
+      return sum(values) / len(values)
+
+average = average_score(scores)
+print("Average score:", average)
+
+if average >= 80:
+      print("Status: strong")
+else:
+      print("Status: needs improvement")
