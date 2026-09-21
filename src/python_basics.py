@@ -40,3 +40,16 @@ if average >= 80:
       print("Status: strong")
 else:
       print("Status: needs improvement")
+
+def classify_score(score):
+      if not 0 <= score <= 100:
+          raise ValueError("Score must be between 0 and 100.")
+
+      if score >= 85:
+          return "High"
+      elif score >= 70:
+          return "Medium"
+      return "Low"
+
+for score in scores:
+      print(f"Score {score}: {classify_score(score)}")
